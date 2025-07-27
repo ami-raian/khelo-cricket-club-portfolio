@@ -1,52 +1,53 @@
+import Image from "next/image";
+
 export default function Footer() {
+  const footerImages = [
+    {
+      icon: "/footer/footer-image1.png",
+    },
+    {
+      icon: "/footer/footer-image2.png",
+    },
+    {
+      icon: "/footer/footer-image3.png",
+    },
+    {
+      icon: "/footer/footer-image4.png",
+    },
+    {
+      icon: "/footer/footer-image5.png",
+    },
+    {
+      icon: "/footer/footer-image6.png",
+    },
+    {
+      icon: "/footer/footer-image7.png",
+    },
+    {
+      icon: "/footer/footer-image1.png",
+    },
+  ];
+
   return (
-    <footer className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
-      <div className="container mx-auto px-4">
-        {/* Sponsors */}
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">SPALDING</div>
-            <div className="text-sm text-blue-200">NEVER FLAT</div>
+    <footer className="text-white bg-[url('/header-full-image.png')] bg-cover bg-center bg-no-repeat ">
+      <div className="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-6 items-center min-h-[100px] py-10">
+        {footerImages.map((image, index) => (
+          <div key={index} className="flex justify-center items-center">
+            <Image
+              src={image.icon}
+              alt={`Footer Image ${index + 1}`}
+              width={100}
+              height={100}
+              className="rounded-full shadow-lg bg-white w-32 h-32 overflow-hidden"
+            />
           </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">RESPECT</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">UOSPORT</div>
-            <div className="text-sm text-blue-200">PERFORMANCE GEAR</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">DEPONTE</div>
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">SIGMA</div>
-            <div className="text-sm text-blue-200">SPORTS</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">SETXFC</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">BROOKS</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-yellow-400">KEVIN</div>
-            <div className="text-sm text-blue-200">DURANT</div>
-          </div>
-        </div>
-
-        <div className="border-t border-blue-700 pt-8 text-center">
-          <p className="text-blue-200 mb-4">© 2024 Khelo. Designed by v0 Vercel.</p>
-          <div className="flex justify-center space-x-4">
-            <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-            <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-            <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-            <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-          </div>
-        </div>
+        ))}
+      </div>
+      <div className="bg-gradient-to-r from-blue-900/80 to-transparent h-14 flex justify-center items-center">
+        <p className="text-center text-white">
+          © 2025 SA SPORTING CLUB. All rights reserved.
+        </p>
       </div>
     </footer>
-  )
+  );
 }
