@@ -5,14 +5,14 @@ export default function HeroSection() {
   return (
     <section className="h-screen w-full bg-[url('/header-full-image.png')] bg-cover bg-center opacity-100 text-white relative overflow-hidden min-h-screen">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent"></div>
-      <div className="container mx-auto px-4 relative z-10 flex items-center justify-center h-full">
+      <div className="px-4 relative z-10 flex items-center justify-center h-full">
         <div className="flex basis-[100%] items-center justify-start text-left">
-          <div className="space-y-8 basis-[50%]">
+          <div className="space-y-8 basis-[40%] ml-44">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight space-y-6">
-              Welcome to Khelo
+              Welcome to
               <br />
-              <p className="text-6xl lg:text-7xl font-extrabold">
-                <span className="text-yellow-400">CRICKET</span> CLUB
+              <p className="text-5xl lg:text-6xl font-extrabold">
+                <span className="text-yellow-400"> SA SPORTING</span> CLUB
               </p>
             </h1>
             <p className="text-xl text-blue-100 max-w-lg">
@@ -24,13 +24,13 @@ export default function HeroSection() {
             </Button>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center basis-[60%]">
             <Image
-              src="/header-image.png"
+              src="/hero-image.png"
               alt="Cricket Player"
               width={1200}
               height={1400}
-              className="z-10"
+              className="z-10 absolute bottom-0 right-0 h-full"
             />
           </div>
         </div>

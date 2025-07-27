@@ -31,7 +31,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-2">
           <div className="flex items-center space-x-3">
             <div
               className={`rounded-full transition-all duration-300 ${
@@ -39,11 +39,11 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
               }`}
             >
               <Image
-                src="/khelo-logo.png"
-                alt="Khelo Cricket Club"
-                width={48}
-                height={48}
-                className="w-12 h-12 transition-transform duration-300 transform hover:scale-110 overflow-hidden rounded-full"
+                src="/sa-sporting-club-logo.jpg"
+                alt="Khelo Sporting Club"
+                width={56}
+                height={56}
+                className="w-14 h-14 transition-transform duration-300 transform hover:scale-110 overflow-hidden rounded-full"
               />
             </div>
             <div>
@@ -52,15 +52,8 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
-                Khelo
+                SA Sporting Club
               </h1>
-              <p
-                className={`text-xs drop-shadow-sm transition-colors duration-300 ${
-                  isScrolled ? "text-gray-600" : "text-blue-200"
-                }`}
-              >
-                CRICKET CLUB
-              </p>
             </div>
           </div>
 
