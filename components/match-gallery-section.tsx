@@ -18,17 +18,9 @@ export default function MatchGallerySection() {
   );
 
   const images = [
-    // {
-    //   id: 1,
-    //   src: "/latest-news.jpg",
-    //   alt: "Cricket Match Action Shot 1",
-    //   title: "Championship Final - Winning Moment",
-    //   description:
-    //     "The decisive moment when Mumbai Indians secured their victory",
-    // },
     {
       id: 1,
-      src: "/sa-sporting-club/img6.jpg",
+      src: "/sa-sporting-club-logo.jpg",
       alt: "Cricket Match Action Shot 1",
       title: "Championship Final - Winning Moment",
       description:
@@ -92,7 +84,7 @@ export default function MatchGallerySection() {
     },
     {
       id: 10,
-      src: "sa-sporting-club-logo.jpg",
+      src: "/sa-sporting-club/img6.jpg",
       alt: "Cricket Match Action Shot 10",
       title: "Captain's Leadership",
       description: "Team captain motivating players during crucial moments",
@@ -182,9 +174,11 @@ export default function MatchGallerySection() {
               MATCH GALLERY
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Relive the most spectacular moments from our championship matches
-              through this curated collection of action shots
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-justify">
+              Witness the passion, dedication, and triumphant moments that
+              define SA Sporting Club. From breathtaking catches to championship
+              victories, each image tells the story of our cricket journey and
+              the unbreakable spirit of our team
             </p>
           </div>
 
