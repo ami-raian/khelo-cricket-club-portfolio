@@ -114,6 +114,24 @@ export default function PlayerProfilesSection() {
         "Test Debut Century",
       ],
     },
+    {
+      id: 7,
+      name: "KL RAHUL",
+      number: "01",
+      position: "Wicket Keeper Batsman",
+      image: "/sa-sporting-club/img2.jpg",
+      stats: {
+        matches: 42,
+        runs: "2,321",
+        average: "45.50",
+      },
+      description: "Versatile wicket-keeper batsman with elegant stroke play",
+      achievements: [
+        "Fastest IPL Century",
+        "Orange Cap Winner",
+        "Test Debut Century",
+      ],
+    },
   ];
 
   const startAutoPlay = () => {
@@ -181,7 +199,7 @@ export default function PlayerProfilesSection() {
           <Button
             onClick={handlePrevious}
             size="lg"
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 shadow-xl rounded-full w-14 h-14 backdrop-blur-sm border-0"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-gray-200 text-gray-800 shadow-xl rounded-full w-14 h-14 backdrop-blur-sm border-0"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
           >
@@ -191,7 +209,7 @@ export default function PlayerProfilesSection() {
           <Button
             onClick={handleNext}
             size="lg"
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white text-gray-800 shadow-xl rounded-full w-14 h-14 backdrop-blur-sm border-0"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-gray-200 text-gray-800 shadow-xl rounded-full w-14 h-14 backdrop-blur-sm border-0"
             onMouseEnter={() => setIsAutoPlaying(false)}
             onMouseLeave={() => setIsAutoPlaying(true)}
           >
@@ -203,7 +221,7 @@ export default function PlayerProfilesSection() {
             {getVisiblePlayers().map((player, index) => (
               <Card
                 key={`${player.id}-${currentIndex}`}
-                className={`group relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm transform hover:scale-105 ${
+                className={`group relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm transform hover:scale-100 ${
                   index === 1 ? "md:scale-110 z-10" : "md:scale-95"
                 }`}
                 onMouseEnter={() => setIsAutoPlaying(false)}
