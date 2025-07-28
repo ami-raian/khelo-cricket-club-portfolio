@@ -180,7 +180,7 @@ export default function PlayerProfilesSection() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">

@@ -92,7 +92,7 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="relative z-10">
         {/* Top Section */}
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto py-16">
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
             {/* Club Information */}
             <div className="space-y-6">
@@ -138,7 +138,7 @@ export default function Footer() {
                   <a
                     key={index}
                     href={link.href}
-                    className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 text-sm py-1 hover:translate-x-1 transform transition-transform"
+                    className="text-gray-300 hover:text-yellow-400 duration-200 text-sm py-1 hover:translate-x-1 transform transition-transform"
                   >
                     {link.name}
                   </a>
@@ -156,7 +156,7 @@ export default function Footer() {
                   <a
                     key={index}
                     href={item.href}
-                    className="block text-gray-300 hover:text-yellow-400 transition-colors duration-200 text-sm py-1 hover:translate-x-1 transform transition-transform"
+                    className="block text-gray-300 hover:text-yellow-400 duration-200 text-sm py-1 hover:translate-x-1 transform transition-transform"
                   >
                     {item.name}
                   </a>
@@ -252,7 +252,7 @@ export default function Footer() {
 
         {/* Sponsors Section */}
         <div className="border-t border-white/10">
-          <div className="container mx-auto px-4 py-12">
+          <div className="container mx-auto py-12">
             <div className="text-center mb-8">
               <h4 className="text-2xl font-bold text-white mb-2">
                 Our Partners & Sponsors
@@ -286,7 +286,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 bg-black/20 backdrop-blur-sm">
-          <div className="container mx-auto px-4 py-6">
+          <div className="container mx-auto py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-left">
                 <p className="text-sm text-gray-300">
