@@ -1,7 +1,7 @@
 export default function StatisticsSection() {
   return (
     <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-4xl font-bold text-yellow-400 mb-2">350+</div>
@@ -22,5 +22,5 @@ export default function StatisticsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

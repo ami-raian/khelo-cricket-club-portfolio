@@ -1,9 +1,9 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function PlayerProfilesSection() {
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="text-center">
             <Image
@@ -44,5 +44,5 @@ export default function PlayerProfilesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

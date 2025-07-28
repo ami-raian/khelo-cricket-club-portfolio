@@ -53,7 +53,7 @@ export default function MatchInfoSection() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto flex basis-[100%] items-center justify-between px-4 gap-8 ">
+      <div className="container mx-auto flex basis-[100%] items-center justify-between gap-8 ">
         <div className="basis-[50%]">
           {/* Last Match Highlights Carousel */}
           <Card className="bg-gradient-to-br from-blue-800 to-blue-600 text-white p-8 relative overflow-hidden">

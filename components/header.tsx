@@ -30,7 +30,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           : "backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between py-2">
           <div className="flex items-center space-x-3">
             <div
@@ -134,7 +134,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
                 : "bg-blue-900/95 border-blue-700/30"
             }`}
           >
-            <nav className="container mx-auto px-4 py-6">
+            <nav className="container mx-auto py-6">
               <div className="flex flex-col space-y-4">
                 {[
                   "HOME",

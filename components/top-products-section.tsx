@@ -1,10 +1,10 @@
-import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function TopProductsSection() {
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">TOP PRODUCTS</h2>
         <div className="grid md:grid-cols-4 gap-8">
           <Card className="text-center">
@@ -62,5 +62,5 @@ export default function TopProductsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -7,7 +7,7 @@ export default function WhoWeAreSection() {
       {/* Background Image with Overlay for better text readability */}
       <div className="absolute inset-0 bg-[url('/header-full-image.png')] bg-cover bg-center bg-no-repeat"></div>
 
-      <div className="relative container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px]">
+      <div className="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-[500px]">
         {/* Left Content Area */}
         <div className="space-y-6 text-center lg:text-left">
           <p className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
