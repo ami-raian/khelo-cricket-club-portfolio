@@ -36,6 +36,18 @@ export default function NewsAndTableSection() {
       date: "May 14, 2024",
       title: "Ground Round Baseball Stars Right Here",
     },
+    {
+      id: 5,
+      image: "/latest-news.jpg",
+      date: "May 14, 2024",
+      title: "Ground Round Baseball Stars Right Here",
+    },
+    {
+      id: 6,
+      image: "/latest-news.jpg",
+      date: "May 14, 2024",
+      title: "Ground Round Baseball Stars Right Here",
+    },
   ];
 
   const pointsTable = [
@@ -112,7 +124,7 @@ export default function NewsAndTableSection() {
   return (
     <>
       <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Latest News */}
             <div className="space-y-8">

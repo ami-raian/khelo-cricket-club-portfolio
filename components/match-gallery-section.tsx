@@ -166,8 +166,8 @@ export default function MatchGallerySection() {
 
   return (
     <>
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
-        <div className="container mx-auto px-4">
+      <section className="py-20">
+        <div className="container mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">

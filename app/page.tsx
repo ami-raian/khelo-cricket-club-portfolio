@@ -26,10 +26,10 @@ export default function CricketPortfolio() {
       <WhoWeAreSection />
       <PlayerProfilesSection />
       <StatisticsSection />
+      {/* <ChampionAwardsSection /> */}
       <MatchGallerySection />
-      <ChampionAwardsSection />
-      <TopProductsSection />
-      <NewsletterSection />
+      {/* <TopProductsSection /> */}
+      {/* <NewsletterSection /> */}
       <Footer />
     </div>
   );
