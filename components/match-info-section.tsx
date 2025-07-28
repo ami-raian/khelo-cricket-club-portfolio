@@ -18,73 +18,49 @@ export default function MatchInfoSection() {
   const youtubeVideos = [
     {
       id: "uYyR56LRSBA",
-      title: "Rainbow CC vs Dhakaiya Royal CC | LIVE | 31th Match",
-      thumbnail:
-        "/placeholder.svg?height=180&width=320&text=Live Match Highlights",
-      duration: "2:45",
-      views: "12K",
-      date: "2 days ago",
+      title:
+        "Rainbow CC vs Dhakaiya Royal CC | LIVE | 31th Match | T Sports 100 Balls Corporate Clash 2021",
+      thumbnail: "/thumbnail.png",
+      duration: "LIVE",
+      views: "850",
+      date: "3 years ago",
+      isLive: false,
     },
     {
-      id: "R_COkhDAnFg",
-      title: "Cricket Highlights - Epic Match Moments",
-      thumbnail: "/placeholder.svg?height=180&width=320&text=Epic Moments",
-      duration: "5:23",
-      views: "25K",
-      date: "1 week ago",
+      id: "skwHFEqNVhE",
+      title: "SA Sporting Club Championship Match | Live Cricket Action",
+      thumbnail: "/thumbnail.png",
+      duration: "LIVE",
+      views: "1.2K",
+      date: "2 years ago",
+      isLive: false,
     },
     {
-      id: "VIDEO_ID_3",
-      title: "SA Sporting Club - Training Session Highlights",
-      thumbnail: "/placeholder.svg?height=180&width=320&text=Training Session",
-      duration: "3:12",
-      views: "8.5K",
-      date: "3 days ago",
+      id: "XEHYb7FyBhk",
+      title: "Cricket Tournament Finals | SA Sporting Club vs Rivals",
+      thumbnail: "/thumbnail.png",
+      duration: "LIVE",
+      views: "2.1K",
+      date: "1 year ago",
+      isLive: false,
     },
     {
-      id: "VIDEO_ID_4",
-      title: "Interview with SA Sporting Club Captain",
-      thumbnail: "/placeholder.svg?height=180&width=320&text=Captain Interview",
-      duration: "8:45",
-      views: "15K",
-      date: "5 days ago",
+      id: "n23i-88ah0U",
+      title: "Premier League Cricket | SA Sporting Club Highlights",
+      thumbnail: "/thumbnail.png",
+      duration: "LIVE",
+      views: "3.5K",
+      date: "8 months ago",
+      isLive: false,
     },
     {
-      id: "VIDEO_ID_5",
-      title: "Best Wickets from SA Sporting Club Season",
-      thumbnail: "/placeholder.svg?height=180&width=320&text=Best Wickets",
-      duration: "4:18",
-      views: "32K",
-      date: "1 week ago",
-    },
-  ];
-
-  const recentMatches = [
-    {
-      id: 1,
-      venue: "Wankhede Stadium",
-      date: "May 15, 2024",
-      team1: {
-        name: "Chennai Super Kings",
-        color: "bg-yellow-500",
-        score: "185/6",
-      },
-      team2: { name: "Mumbai Indians", color: "bg-blue-600", score: "178/8" },
-      result: "CSK Won by 7 runs",
-      status: "completed",
-    },
-    {
-      id: 2,
-      venue: "Eden Gardens",
-      date: "May 10, 2024",
-      team1: {
-        name: "Kolkata Knight Riders",
-        color: "bg-purple-600",
-        score: "195/4",
-      },
-      team2: { name: "Delhi Capitals", color: "bg-blue-500", score: "189/7" },
-      result: "KKR Won by 6 runs",
-      status: "completed",
+      id: "eNZKWt2NbLo",
+      title: "Corporate Cricket Championship | SA Sporting Club Live Match",
+      thumbnail: "/thumbnail.png",
+      duration: "LIVE",
+      views: "1.8K",
+      date: "6 months ago",
+      isLive: false,
     },
   ];
 
@@ -106,16 +82,16 @@ export default function MatchInfoSection() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
             MATCH CENTER
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Watch highlights, check recent results, and stay updated with the
-            latest cricket action
+          <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed">
+            Watch live matches, highlights, and stay updated with the latest
+            cricket action from SA Sporting Club
           </p>
         </div>
 
@@ -127,7 +103,7 @@ export default function MatchInfoSection() {
                 <Play className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800">
-                Match Highlights
+                Live Matches & Highlights
               </h3>
             </div>
 
@@ -147,23 +123,6 @@ export default function MatchInfoSection() {
                       className="w-full h-full"
                     />
                   </div>
-
-                  {/* Video Info Overlay */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-sm rounded-lg p-4">
-                    <h4 className="text-white font-bold text-lg mb-2">
-                      {currentVideo.title}
-                    </h4>
-                    <div className="flex items-center gap-4 text-sm text-gray-300">
-                      <span className="flex items-center gap-1">
-                        <Users className="w-4 h-4" />
-                        {currentVideo.views} views
-                      </span>
-                      <span>{currentVideo.date}</span>
-                      <span className="bg-red-600 px-2 py-1 rounded text-white text-xs">
-                        {currentVideo.duration}
-                      </span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Video Navigation */}
@@ -178,7 +137,7 @@ export default function MatchInfoSection() {
                       <ChevronLeft className="w-5 h-5" />
                     </Button>
 
-                    <div className="flex-1 overflow-x-auto scrollbar-hide">
+                    <div className="flex-1 overflow-auto hide-scrollbar">
                       <div className="flex gap-3">
                         {youtubeVideos.map((video, index) => (
                           <div
@@ -192,14 +151,20 @@ export default function MatchInfoSection() {
                           >
                             <div className="w-32 h-20 rounded-lg overflow-hidden bg-gray-800">
                               <Image
-                                src={video.thumbnail || "/placeholder.svg"}
+                                src={video.thumbnail}
                                 alt={video.title}
                                 width={128}
                                 height={80}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            <div className="absolute bottom-1 right-1 bg-black/80 text-white text-xs px-1 rounded">
+                            <div
+                              className={`absolute bottom-1 right-1 text-white text-xs px-1 rounded ${
+                                video.isLive
+                                  ? "bg-red-600 animate-pulse"
+                                  : "bg-black/80"
+                              }`}
+                            >
                               {video.duration}
                             </div>
                             {index === currentVideoIndex && (
@@ -325,7 +290,7 @@ export default function MatchInfoSection() {
             <div className="text-3xl font-bold text-blue-600 mb-2">
               {youtubeVideos.length}
             </div>
-            <div className="text-gray-600 font-medium">Video Highlights</div>
+            <div className="text-gray-600 font-medium">Live Matches</div>
           </Card>
 
           <Card className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border-0">
@@ -342,7 +307,7 @@ export default function MatchInfoSection() {
             <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Users className="w-6 h-6 text-white" />
             </div>
-            <div className="text-3xl font-bold text-purple-600 mb-2">92K</div>
+            <div className="text-3xl font-bold text-purple-600 mb-2">9.5K</div>
             <div className="text-gray-600 font-medium">Total Views</div>
           </Card>
 
@@ -350,7 +315,7 @@ export default function MatchInfoSection() {
             <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Calendar className="w-6 h-6 text-white" />
             </div>
-            <div className="text-3xl font-bold text-pink-600 mb-2">15</div>
+            <div className="text-3xl font-bold text-pink-600 mb-2">25</div>
             <div className="text-gray-600 font-medium">Matches This Season</div>
           </Card>
         </div> */}

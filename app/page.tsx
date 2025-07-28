@@ -24,7 +24,7 @@ export default function CricketPortfolio() {
       <MatchInfoSection />
       <NewsAndTableSection />
       <WhoWeAreSection />
-      <PlayerProfilesSection />
+      {/* <PlayerProfilesSection /> */}
       <StatisticsSection />
       {/* <ChampionAwardsSection /> */}
       <MatchGallerySection />
