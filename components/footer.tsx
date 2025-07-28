@@ -189,7 +189,7 @@ export default function Footer() {
                   <MapPin className="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
                   <div className="text-sm text-gray-300">
                     <p>SA Sporting Club Ground</p>
-                    <p>123 Cricket Avenue, Dhaka</p>
+                    <p>Mohammedpur, Dhaka, Bangladesh</p>
                     <p>Bangladesh - 1000</p>
                   </div>
                 </div>
@@ -197,14 +197,14 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-yellow-400" />
                   <span className="text-sm text-gray-300">
-                    +880 1234-567890
+                    +880 1730-433773
                   </span>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-yellow-400" />
                   <span className="text-sm text-gray-300">
-                    info@sasportingclub.com
+                    sasporting.club@gmail.com
                   </span>
                 </div>
 

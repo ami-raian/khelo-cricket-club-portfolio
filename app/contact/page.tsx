@@ -86,8 +86,8 @@ export default function ContactPage() {
       title: "Visit Us",
       details: [
         "SA Sporting Club Ground",
-        "123 Cricket Avenue",
-        "Dhaka, Bangladesh - 1000",
+        "Mohammedpur, Dhaka, Bangladesh",
+        "",
       ],
       color: "text-blue-500",
       bgColor: "bg-blue-500",
@@ -95,22 +95,14 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Call Us",
-      details: [
-        "+880 1234-567890",
-        "+880 9876-543210",
-        "Emergency: +880 1111-222333",
-      ],
+      details: ["+880 1730-433773", "", "Emergency: +880 1111-222333"],
       color: "text-green-500",
       bgColor: "bg-green-500",
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: [
-        "info@sasportingclub.com",
-        "coaching@sasportingclub.com",
-        "membership@sasportingclub.com",
-      ],
+      details: ["sasporting.club@gmail.com", "", ""],
       color: "text-purple-500",
       bgColor: "bg-purple-500",
     },
@@ -422,7 +414,9 @@ export default function ContactPage() {
                         Find Us Here
                       </h3>
                       <p className="text-gray-600">SA Sporting Club Ground</p>
-                      <p className="text-gray-600">123 Cricket Avenue, Dhaka</p>
+                      <p className="text-gray-600">
+                        Mohammedpur, Dhaka, Bangladesh
+                      </p>
                       <Button className="mt-4 bg-blue-600 hover:bg-blue-700">
                         Get Directions
                       </Button>
@@ -447,7 +441,7 @@ export default function ContactPage() {
                           Call Now
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          +880 1234-567890
+                          +880 1730-433773
                         </p>
                       </div>
                     </div>
@@ -475,7 +469,7 @@ export default function ContactPage() {
                           Email Support
                         </h4>
                         <p className="text-gray-600 text-sm">
-                          info@sasportingclub.com
+                          sasporting.club@gmail.com
                         </p>
                       </div>
                     </div>
