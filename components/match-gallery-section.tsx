@@ -169,12 +169,12 @@ export default function MatchGallerySection() {
       <section className="py-20">
         <div className="container mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          <div className="text-center mb-16 px-4 lg:px-0">
+            <p className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               MATCH GALLERY
-            </h2>
+            </p>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-justify">
+            <p className="text-xl text-gray-600 max-w-5xl mx-auto leading-relaxed text-justify">
               Witness the passion, dedication, and triumphant moments that
               define SA Sporting Club. From breathtaking catches to championship
               victories, each image tells the story of our cricket journey and

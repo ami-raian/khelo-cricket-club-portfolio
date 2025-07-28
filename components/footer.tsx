@@ -251,7 +251,7 @@ export default function Footer() {
         </div>
 
         {/* Sponsors Section */}
-        <div className="border-t border-white/10">
+        {/* <div className="border-t border-white/10">
           <div className="container mx-auto py-12">
             <div className="text-center mb-8">
               <h4 className="text-2xl font-bold text-white mb-2">
@@ -282,7 +282,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 bg-black/20 backdrop-blur-sm">

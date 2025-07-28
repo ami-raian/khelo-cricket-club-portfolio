@@ -6,7 +6,7 @@ export default function HeroSection() {
     <section className="w-full bg-[url('/header-full-image.png')] bg-cover bg-center opacity-100 text-white overflow-hidden h-fit">
       {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent"></div> */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="flex basis-[100%] items-center justify-start text-left container mx-auto pt-20">
+        <div className="flex basis-[100%] items-center justify-start text-left container mx-auto pt-20 px-4 lg:px-0">
           <div className="space-y-4 2xl:space-y-6 basis-[40%]">
             <p className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight">
               Welcome to

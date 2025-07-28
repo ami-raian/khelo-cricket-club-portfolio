@@ -108,18 +108,18 @@ export default function MatchInfoSection() {
     <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
             MATCH CENTER
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Watch highlights, check recent results, and stay updated with the
             latest cricket action
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-start">
           {/* Video Highlights Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
@@ -229,7 +229,7 @@ export default function MatchInfoSection() {
           </div>
 
           {/* Recent Match Results */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-gradient-to-r from-green-500 to-green-600 rounded-lg">
                 <Trophy className="w-6 h-6 text-white" />
@@ -261,7 +261,6 @@ export default function MatchInfoSection() {
 
                     <div className="p-6">
                       <div className="space-y-4">
-                        {/* Team 1 */}
                         <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg group-hover:bg-gray-100 transition-colors">
                           <div className="flex items-center gap-3">
                             <div
@@ -276,14 +275,12 @@ export default function MatchInfoSection() {
                           </div>
                         </div>
 
-                        {/* VS Divider */}
                         <div className="text-center">
                           <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                             VS
                           </span>
                         </div>
 
-                        {/* Team 2 */}
                         <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg group-hover:bg-gray-100 transition-colors">
                           <div className="flex items-center gap-3">
                             <div
@@ -298,7 +295,6 @@ export default function MatchInfoSection() {
                           </div>
                         </div>
 
-                        {/* Result */}
                         <div className="text-center pt-4 border-t border-gray-200">
                           <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">
                             <Trophy className="w-4 h-4" />
@@ -312,13 +308,12 @@ export default function MatchInfoSection() {
               ))}
             </div>
 
-            {/* View All Results Button */}
             <div className="text-center pt-4">
               <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                 View All Results
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Stats Section */}
