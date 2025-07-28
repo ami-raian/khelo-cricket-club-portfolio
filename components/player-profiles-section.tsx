@@ -348,7 +348,7 @@ export default function PlayerProfilesSection() {
         </div>
 
         {/* Team Stats */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-6">
           <Card className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 border-0">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Star className="w-6 h-6 text-white" />
@@ -382,7 +382,7 @@ export default function PlayerProfilesSection() {
             <div className="text-3xl font-bold text-pink-600 mb-2">95%</div>
             <div className="text-gray-600 font-medium">Win Rate</div>
           </Card>
-        </div>
+        </div> */}
       </div>
     </section>
   );
