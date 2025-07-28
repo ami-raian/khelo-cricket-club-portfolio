@@ -290,7 +290,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-left">
                 <p className="text-sm text-gray-300">
-                  © 2024 SA SPORTING CLUB. All rights reserved.
+                  © 2025 SA SPORTING CLUB. All rights reserved.
                 </p>
                 <p className="text-xs text-gray-400 mt-1">
                   Designed with ❤️ for cricket enthusiasts
