@@ -18,9 +18,17 @@ export default function MatchGallerySection() {
   );
 
   const images = [
+    // {
+    //   id: 1,
+    //   src: "/latest-news.jpg",
+    //   alt: "Cricket Match Action Shot 1",
+    //   title: "Championship Final - Winning Moment",
+    //   description:
+    //     "The decisive moment when Mumbai Indians secured their victory",
+    // },
     {
       id: 1,
-      src: "/latest-news.jpg",
+      src: "/sa-sporting-club/img6.jpg",
       alt: "Cricket Match Action Shot 1",
       title: "Championship Final - Winning Moment",
       description:
@@ -49,7 +57,7 @@ export default function MatchGallerySection() {
     },
     {
       id: 5,
-      src: "/group-images/groupImage2.jpg",
+      src: "/group-images/groupImage3.jpg",
       alt: "Cricket Match Action Shot 5",
       title: "Team Victory Dance",
       description: "The entire team celebrating their championship win",
@@ -70,15 +78,22 @@ export default function MatchGallerySection() {
     },
     {
       id: 8,
-      src: "/group-images/groupImage3.jpg",
+      src: "/sa-sporting-club/img5.jpg",
       alt: "Cricket Match Action Shot 8",
       title: "Wicket Keeper's Brilliance",
       description: "Lightning-fast stumping that dismissed the batsman",
     },
     {
       id: 9,
-      src: "/sa-sporting-club/img5.jpg",
+      src: "/group-images/groupImage2.jpg",
       alt: "Cricket Match Action Shot 9",
+      title: "Captain's Leadership",
+      description: "Team captain motivating players during crucial moments",
+    },
+    {
+      id: 10,
+      src: "sa-sporting-club-logo.jpg",
+      alt: "Cricket Match Action Shot 10",
       title: "Captain's Leadership",
       description: "Team captain motivating players during crucial moments",
     },
@@ -113,14 +128,18 @@ export default function MatchGallerySection() {
     image: (typeof images)[0];
     index: number;
   }) => (
-    <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 bg-white">
+    <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 bg-white h-full">
       <div className="relative overflow-hidden">
         <Image
           src={image.src || "/placeholder.svg"}
           alt={image.alt}
           width={600}
           height={400}
-          className="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110 group-hover:blur-sm"
+          className={`w-full  ${
+            index === 0 || index === 5 || index === 8 || index === 9
+              ? "h-[543.98px]"
+              : "h-64"
+          } object-cover transition-all duration-500 group-hover:scale-110 group-hover:blur-sm`}
         />
 
         {/* Overlay */}
@@ -170,13 +189,17 @@ export default function MatchGallerySection() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {images.map((image, index) => (
               <div
                 key={image.id}
                 className={`${
-                  index % 6 === 1 || index % 6 === 4 ? "md:col-span-2" : ""
-                } ${index % 8 === 2 ? "lg:row-span-2" : ""}`}
+                  index === 1 || index === 4 || index === 8 ? "col-span-2" : ""
+                } ${
+                  index === 5 || index === 0 || index === 8 || index === 9
+                    ? "row-span-2"
+                    : ""
+                }`}
               >
                 <GalleryImage image={image} index={index} />
               </div>
