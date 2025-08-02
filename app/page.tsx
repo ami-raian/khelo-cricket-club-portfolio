@@ -24,12 +24,12 @@ export default function CricketPortfolio() {
       <MatchInfoSection />
       <NewsAndTableSection />
       <WhoWeAreSection />
-      <PlayerProfilesSection />
+      {/* <PlayerProfilesSection /> */}
       <StatisticsSection />
+      {/* <ChampionAwardsSection /> */}
       <MatchGallerySection />
-      <ChampionAwardsSection />
-      <TopProductsSection />
-      <NewsletterSection />
+      {/* <TopProductsSection /> */}
+      {/* <NewsletterSection /> */}
       <Footer />
     </div>
   );

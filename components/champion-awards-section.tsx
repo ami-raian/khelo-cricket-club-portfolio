@@ -1,10 +1,12 @@
-import { Trophy } from "lucide-react"
+import { Trophy } from "lucide-react";
 
 export default function ChampionAwardsSection() {
   return (
     <section className="py-16 bg-gradient-to-br from-blue-900 to-blue-700 text-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">CHAMPION AWARDS</h2>
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12">
+          CHAMPION AWARDS
+        </h2>
         <div className="grid md:grid-cols-4 gap-8">
           <div className="text-center">
             <Trophy className="w-20 h-20 text-yellow-400 mx-auto mb-4" />
@@ -29,5 +31,5 @@ export default function ChampionAwardsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
